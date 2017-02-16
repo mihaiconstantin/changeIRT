@@ -2,7 +2,7 @@ Package: ChgAssesIrt
 Title: R package for change assessment using IRT
 Version: 0.0.1
 Authors@R: person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre"))
-Description: To be added
+Description: To be added.
 Depends: R (>= 3.3.2)
 License: MIT + file LICENSE
 Encoding: UTF-8
