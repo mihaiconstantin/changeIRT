@@ -1,4 +1,4 @@
-Package: ChgAsseIrt
+Package: ChgAssesIrt
 Title: R package for change assessment using IRT
 Version: 0.0.1
 Authors@R: person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre"))
