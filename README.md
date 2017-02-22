@@ -1,1 +1,1 @@
-### R package for change assessement using IRT.
+### R package for IRT change assessement and data simulations 
