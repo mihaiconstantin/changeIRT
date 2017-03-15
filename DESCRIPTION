@@ -2,18 +2,18 @@ Package: chgassesirt
 Title: An R package for IRT change assessment and data simulation
 Version: 0.0.1
 Authors@R: c(
-		person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre"))
+		person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre")),
 		person("Wilco", "Emons", email = "w.h.m.emons@uvt.nl", role = c("aut"))
 	)
 URL: https://github.com/mihaiconstantin/chgassesirt
 BugReports: https://github.com/mihaiconstantin/chgassesirt/issues
 Description: To be added.
 Depends: 
-	R (>= 3.3.2)
+	R (>= 3.3.2),
+	R6
 Imports: 
 	utils,
-	methods,
-	R6
+	methods
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
