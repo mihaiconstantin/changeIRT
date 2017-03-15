@@ -9,11 +9,11 @@ URL: https://github.com/mihaiconstantin/chgassesirt
 BugReports: https://github.com/mihaiconstantin/chgassesirt/issues
 Description: To be added.
 Depends: 
-	R (>= 3.1.2)
+	R (>= 3.1.2),
+	R6
 Imports: 
 	utils,
-	methods,
-	R6
+	methods
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
