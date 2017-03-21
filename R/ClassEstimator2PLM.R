@@ -14,8 +14,8 @@ Estimator2PLM = R6Class("Estimator2PLM",
 			#private$iif 	= private$ComputeIif(theta, b, a)
 			#private$trftif = private$ComputeTrfTif(theta, b, a)
 
-			private$data 	= private$GenerateData(private$irf)
-			private$model 	= "Simulated 2PLM"
+			private$data = private$GenerateData(private$irf)
+			private$model = "Simulated 2PLM"
 		}
 	)
 

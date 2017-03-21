@@ -7,27 +7,31 @@ CoreMethods = R6Class("CoreMethods",
 			return(1 / (1 + exp(-sweep(outer(theta, b, "-"), 2, a, "*"))))
 		},
 
-		ComputeIif = function() {
-			return("not implemented")
+		ComputeIif = function(irf, a) {
+			return(sweep(irf * (1 - irf), 2, a ^ 2, "*"))
 		},
 
-		ComputeTrfTif = function() {
-			return("not implemented")
+		ComputeTrfTif = function(irf, iif) {
+			return(cbind(apply(irf, 1, sum), apply(iif, 1, sum)))
 		},
+
 
 		# GRM sepecific
-		ComputeCumulativeIrf = function(irf) {
-			return(rowSums(irf, dims = 2))
+		ComputeExpectedItemMeans = function(isrf) {
+			return(rowSums(isrf, dims = 2))
 		},
 
-		ComputeCumulativeIif = function() {
-			return("not implemented")
-		},
-		ComputeCumulativeTrfTif = function() {
-			return("not implemented")
+
+		# Generting data
+		# in the case of GRM isrf are passed instead of irf
+		GenerateData = function(irf, model) {
+			if(model == "2PLM") {
+				return(sweep(irf, 1, runif(dim(irf)[1] * dim(irf)[2], 0, 1), private$ComputeResponse, check.margin = FALSE))
+			} else {
+				return(rowSums(sweep(irf, 1, runif(dim(irf)[1] * dim(irf)[2], 0, 1), private$ComputeResponse, check.margin = FALSE), dims = 2))
+			}
 		},
 		
-		# helpers
 		ComputeResponse = function(x, y) {
 			return(1 * (x - y >= 0))
 		}

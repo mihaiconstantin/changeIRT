@@ -62,3 +62,5 @@ changeirt = function(theta.t1, theta.t2, method = "wald") {
 personfit = function() {
 	
 }
+
+
