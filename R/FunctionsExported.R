@@ -24,6 +24,7 @@ simulateirt = function(theta, b, a) {
 #' Works for 2PLM and GRM - decide the dependency: ltm or mirt?
 #'
 #' @param data matrix
+#' @param theta.method character
 #'
 #' @return children of class Estimator (to be added...)
 #'
