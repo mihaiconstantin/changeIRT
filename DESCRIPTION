@@ -1,20 +1,21 @@
-Package: chgassesirt
-Title: An R package for IRT change assessment and data simulation
+Package: simulateirt
+Title: An R Package For Data Simulation Under the IRT Framework
 Version: 0.0.1
 Authors@R: c(
 		person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre")),
 		person("Wilco", "Emons", email = "w.h.m.emons@uvt.nl", role = c("aut"))
 	)
-URL: https://github.com/mihaiconstantin/chgassesirt
-BugReports: https://github.com/mihaiconstantin/chgassesirt/issues
+URL: https://github.com/mihaiconstantin/simulateirt
+BugReports: https://github.com/mihaiconstantin/simulateirt/issues
 Description: To be added.
 Depends: 
-	R (>= 3.1.2),
-	R6,
-	nleqslv
+	R (>= 3.1.2)
 Imports: 
-	utils,
-	methods
+	methods,
+	nleqslv,
+	R6,
+	Rcpp (>= 0.12.6),
+	utils
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
