@@ -5,6 +5,6 @@ ChangeAssessment = list(
 		cbind(wald = (thetaPost[, 1] - thetaPre[, 1]) / sqrt((thetaPre[, 2] ^ 2) + (thetaPost[, 2] ^ 2)), p = NA)
 	}
 
-	#LL RATION TEST
+	# likelihood ratio test
 	# score test
 )
