@@ -1,6 +1,6 @@
 # TODO: Irf, Iif, Trf, and Irf.
 
-SimulatorGRM = R6Class("SimulatorGRM",
+SimulatorGRM = R6::R6Class("SimulatorGRM",
 	inherit = Simulator,
 
 	# private

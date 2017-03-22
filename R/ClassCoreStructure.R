@@ -1,4 +1,4 @@
-CoreStructure = R6Class("CoreStructure",
+CoreStructure = R6::R6Class("CoreStructure",
 	inherit = CoreMethods,
 
 	# private

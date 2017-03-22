@@ -1,4 +1,4 @@
-Estimator2PLM = R6Class("Estimator2PLM",
+Estimator2PLM = R6::R6Class("Estimator2PLM",
 	inherit = Estimator,
 
 	# private

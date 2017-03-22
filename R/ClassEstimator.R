@@ -1,4 +1,4 @@
-Estimator = R6Class("Estimator",
+Estimator = R6::R6Class("Estimator",
 	inherit = CoreStructure,
 
 	# private

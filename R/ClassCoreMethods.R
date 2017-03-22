@@ -1,4 +1,5 @@
-CoreMethods = R6Class("CoreMethods",
+#' @importFrom R6 R6Class
+CoreMethods = R6::R6Class("CoreMethods",
 
 	# private
 	private = list(

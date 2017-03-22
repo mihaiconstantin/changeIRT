@@ -1,4 +1,4 @@
-Simulator2PLM = R6Class("Simulator2PLM",
+Simulator2PLM = R6::R6Class("Simulator2PLM",
 	inherit = Simulator,
 
 	# private

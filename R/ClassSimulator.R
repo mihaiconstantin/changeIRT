@@ -1,4 +1,4 @@
-Simulator = R6Class("Simulator",
+Simulator = R6::R6Class("Simulator",
 	inherit = CoreStructure,
 
 	# private

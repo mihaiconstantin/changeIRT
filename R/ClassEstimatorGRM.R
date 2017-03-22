@@ -1,4 +1,4 @@
-EstimatorGRM = R6Class("EstimatorGRM",
+EstimatorGRM = R6::R6Class("EstimatorGRM",
 	inherit = Estimator,
 
 	# private
