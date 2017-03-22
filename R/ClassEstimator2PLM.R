@@ -7,15 +7,12 @@ Estimator2PLM = R6Class("Estimator2PLM",
 
 	# public
 	public = list(
-		initialize = function(theta, b, a) {
-			super$initialize(theta, b, a)
+		initialize = function(data, method) {
+			super$initialize(data, method)
 
-			private$irf 	= private$ComputeIrf(theta, b, a)
-			#private$iif 	= private$ComputeIif(theta, b, a)
-			#private$trftif = private$ComputeTrfTif(theta, b, a)
-
-			private$data = private$GenerateData(private$irf)
-			private$model = "Simulated 2PLM"
+			# rearanging the paramaters: b and then a
+			private$parameters = private$parameters[, c(1, 2)]
+			private$model = "Estimated 2PLM"
 		}
 	)
 

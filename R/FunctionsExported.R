@@ -28,9 +28,13 @@ simulateirt = function(theta, b, a) {
 #' @return children of class Estimator (to be added...)
 #'
 #' @export
-estimateirt = function(data) {
-	# check of the data is binary and return
-	# the appropriate IRT model
+estimateirt = function(data, theta.method = "WLE") {
+	
+	if(max(data) > 1) {
+		return(EstimatorGRM$new(data, theta.method))
+	} else {
+		return(Estimator2PLM$new(data, theta.method))
+	}
 }
 
 
