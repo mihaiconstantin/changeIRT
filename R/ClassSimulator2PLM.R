@@ -15,7 +15,7 @@ Simulator2PLM = R6Class("Simulator2PLM",
 
 			private$irf 	= private$ComputeIrf(theta, b, a)
 			private$iif 	= private$ComputeIif(private$irf, a)
-			private$trftif 	= private$ComputeTrfTif()
+			private$trftif 	= private$ComputeTrfTif(private$irf, private$iif)
 
 			private$data 	= private$GenerateData(private$irf, model = "2PLM")
 			private$model 	= "Simulated 2PLM"
