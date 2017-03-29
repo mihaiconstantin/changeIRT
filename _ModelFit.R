@@ -1,6 +1,5 @@
-CoreStructure <- R6::R6Class(
-	"CoreStructure",
-
+ModelFitBase <- R6::R6Class(
+	"ModelFitBase",
 
 	# private
 	private = list(
@@ -14,7 +13,6 @@ CoreStructure <- R6::R6Class(
 		.eim 		= "not applicable"
 	),
 
-
 	# getters
 	active = list(
 		model 		= function() { return(private$.model) 		},
@@ -26,6 +24,6 @@ CoreStructure <- R6::R6Class(
 		isrf 		= function() { return(private$.isrf) 		},
 		eim 		= function() { return(private$.eim) 		}
 	)
+) # ModelFitBa
 
 
-) # CoreStructure
