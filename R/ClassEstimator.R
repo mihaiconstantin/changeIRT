@@ -4,7 +4,7 @@ Estimator = R6::R6Class("Estimator",
 	# private
 	private = list(
 		ModelFitVia.mirt = function(data) {
-			return(mirt(data, 1))
+			return(mirt(data, 1, verbose = FALSE))
 		},
 		ParametersVia.mirt = function(estimationObject) {
 			return(coef(estimationObject, IRTpars = TRUE, simplify = TRUE)$items)
