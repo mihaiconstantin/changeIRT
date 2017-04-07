@@ -19,10 +19,13 @@ Simulator2PLM = R6::R6Class("Simulator2PLM",
 
 			private$data 	= private$GenerateData(private$irf, model = "2PLM")
 			private$model 	= "Simulated 2PLM"
-		},
+		}
+	),
 
-		get.irf 	= function() { return(private$irf) },
-		get.iif 	= function() { return(private$iif) },
+	# active
+	active = list(
+		get.irf 	= function() { return(private$irf)    },
+		get.iif 	= function() { return(private$iif)    },
 		get.trftif 	= function() { return(private$trftif) }
 	)
 
