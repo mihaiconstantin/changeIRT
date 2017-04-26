@@ -1,12 +1,13 @@
-Package: simulateirt
+Package: changeIRT
 Title: An R Package For Data Simulation Under the IRT Framework
 Version: 0.0.1
 Authors@R: c(
 		person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre")),
-		person("Wilco", "Emons", email = "w.h.m.emons@uvt.nl", role = c("aut"))
+		person("Wilco", "Emons", email = "w.h.m.emons@uvt.nl", role = c("aut")),
+		person("Jesper", "Tijmstra", email = "j.tijmstra@uvt.nl", role = c("aut"))
 	)
-URL: https://github.com/mihaiconstantin/simulateirt
-BugReports: https://github.com/mihaiconstantin/simulateirt/issues
+URL: https://github.com/mihaiconstantin/changeIRT
+BugReports: https://github.com/mihaiconstantin/changeIRT/issues
 Description: To be added.
 Depends: 
 	R (>= 3.1.2)
