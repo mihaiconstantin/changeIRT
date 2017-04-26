@@ -3,11 +3,11 @@ ThetaBase <- R6::R6Class(
 
 	# private
 	private = list(
-		.type = NULL,
+		.type  = NULL,
 		.theta = NULL,
 		.se    = NULL,
 
-		# determine for all chidren to model used
+		# determine for all chidren the model used
 		.determine_item_type = function(data) {
 			if(max(data) > 1) private$.type <- "poly" else private$.type <- "dich"
 		}
@@ -28,13 +28,19 @@ ThetaBase <- R6::R6Class(
 
 
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+
+
 ThetaWle <- R6::R6Class(
 	"ThetaWle",
 	inherit = ThetaBase,
 
 	# internals for wle
 	private = list(
-		# all sorts of nasty things 
+		# all sorts of things 
 		# used for the WLE estimation
 		# then we call them from the 
 		# public wrappers 2plm and grm
@@ -70,6 +76,12 @@ ThetaWle <- R6::R6Class(
 		}
 	)
 ) # ThetaWle
+
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 
 

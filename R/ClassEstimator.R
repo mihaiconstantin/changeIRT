@@ -1,6 +1,6 @@
-Estimator <- R6::R6Class(
-	"Estimator",
-	inherit = CoreStructure,
+ModelFitEstimate <- R6::R6Class(
+	"ModelFitEstimate",
+	inherit = ModelFitBase,
 
 
 	# private
@@ -55,24 +55,16 @@ Estimator <- R6::R6Class(
 	)
 
 
-) # Estimator
+) # ModelFitEstimate
 
 
-#' Estimate IRT model based on data
+#' Fit an IRT model (2PLM or GRM)
 #'
-#' Works for 2PLM and GRM - decide the dependency: ltm or mirt?
+#' Depends on mirt package for paramter estimation.
 #'
-#' @param data matrix
-#' @param theta.method character
-#'
-#' @return children of class Estimator (to be added...)
-#'
+#' @param data Numeric matrix of item scores.
+#' @param method Three letters character indicating the estimation method for theta. Available options: WLE, MLE, EAP. Defaults to WLE. 
 #' @export
-estimateirt = function(data, theta.method = "WLE") {
-	
-	if(max(data) > 1) {
-		return(EstimatorGRM$new(data, theta.method))
-	} else {
-		return(Estimator2PLM$new(data, theta.method))
-	}
+estimateirt <- function(data, method = "WLE") {
+	return(ModelFitEstimate$new(data, method))
 }

@@ -1,25 +1,20 @@
-#' changeirt: an R package for
+#' changeIRT: an R package for to be added
 #'
-#' dplyr provides a flexible grammar of data manipulation. It's the next
-#' iteration of plyr, focused on tools for working with data frames (hence the
-#' \emph{d} in the name).
+#' changeIRT provides a flexible... description here.
 #'
-#' It has three main goals:
+#' It has x main goals:
 #'
 #' \itemize{
-#' \item Identify the most important data manipulation verbs and make them
-#'   easy to use from R.
-#' \item Provide blazing fast performance for in-memory data by writing key
-#'   pieces in C++ (using Rcpp)
-#' \item Use the same interface to work with data no matter where it's stored,
-#'   whether in a data frame, a data table or database.
+#' \item Goal x.
+#' \item Goal x.
+#' \item Goal x.
 #' }
 #'
-#' To learn more about dplyr, start with the vignettes
+#' To learn more about changeIRT, start with the vignettes
 #'
 #' @docType package
-#' @name changeirt
-#' @useDynLib changeirt
+#' @name changeIRT
+#' @useDynLib changeIRT
 #' @importFrom R6 R6Class
 #' @importFrom mirt mirt coef fscores
 #' @importFrom Rcpp cppFunction Rcpp.plugin.maker
