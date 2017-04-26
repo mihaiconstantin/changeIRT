@@ -1,5 +1,5 @@
 Package: changeIRT
-Title: An R Package For Data Simulation Under the IRT Framework
+Title: An R Package For Change Assessment and Data Simulation Under the IRT Framework
 Version: 0.0.1
 Authors@R: c(
 		person("Mihai", "Constantin", email = "constantin.mihai.alexandru@gmail.com", role = c("aut", "cre")),
