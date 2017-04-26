@@ -10,5 +10,5 @@ personfit()
 matrix: first column test value, second column p value
 }
 \description{
-to be added... decide dependecy or implementation
+to be added... decide: dependecy or implementation
 }

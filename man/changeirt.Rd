@@ -7,9 +7,9 @@
 changeirt(theta.t1, theta.t2, method = "wald")
 }
 \arguments{
-\item{theta.t1}{matrix: fir column thetas, second column se}
+\item{theta.t1}{matrix: first column thetas, second column se}
 
-\item{theta.t2}{matrix: fir column thetas, second column se}
+\item{theta.t2}{matrix: first column thetas, second column se}
 
 \item{method}{character: the test used; defaults to Wald test}
 }

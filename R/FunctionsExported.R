@@ -44,8 +44,8 @@ estimateirt = function(data, theta.method = "WLE") {
 #'
 #' to be added...
 #'
-#' @param theta.t1 matrix: fir column thetas, second column se
-#' @param theta.t2 matrix: fir column thetas, second column se
+#' @param theta.t1 matrix: first column thetas, second column se
+#' @param theta.t2 matrix: first column thetas, second column se
 #' @param method character: the test used; defaults to Wald test
 #'
 #' @return children of class ChangeAssessment (to be added...)
@@ -59,7 +59,7 @@ changeirt = function(theta.t1, theta.t2, method = "wald") {
 
 #' Compute Person-Fit statistics
 #'
-#' to be added... decide dependecy or implementation
+#' to be added... decide: dependecy or implementation
 #'
 #' @return matrix: first column test value, second column p value
 #'
