@@ -42,10 +42,10 @@ estimateirt = function(data, theta.method = "WLE") {
 
 #' Compute RCI 
 #'
-#' to be added...
+#' Roxygen2 is awesome.
 #'
-#' @param theta.t1 matrix: first column thetas, second column se
-#' @param theta.t2 matrix: first column thetas, second column se
+#' @param theta_pre matrix: first column thetas, second column se
+#' @param theta_post matrix: first column thetas, second column se
 #' @param method character: the test used; defaults to Wald test
 #'
 #' @return children of class ChangeAssessment (to be added...)

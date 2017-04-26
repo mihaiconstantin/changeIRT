@@ -7,15 +7,15 @@
 changeirt(theta.t1, theta.t2, method = "wald")
 }
 \arguments{
-\item{theta.t1}{matrix: first column thetas, second column se}
-
-\item{theta.t2}{matrix: first column thetas, second column se}
-
 \item{method}{character: the test used; defaults to Wald test}
+
+\item{theta_pre}{matrix: first column thetas, second column se}
+
+\item{theta_post}{matrix: first column thetas, second column se}
 }
 \value{
 children of class ChangeAssessment (to be added...)
 }
 \description{
-to be added...
+Roxygen2 is awesome.
 }
