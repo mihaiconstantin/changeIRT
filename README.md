@@ -1,4 +1,4 @@
-## An R Package For Data Simulation Under the Unidimensional IRT Framework
+## An R Package For Change Assessment and Data Simulation Under the Unidimensional IRT Framework
 
 **What is included:**
 
